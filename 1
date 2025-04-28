@@ -1,0 +1,8 @@
+[Nginx Installation:}
+sudo apt update
+sudo apt install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo bash -c 'echo "Welcome to Prodevans" > /usr/share/nginx/html/index.html'
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --reload
